@@ -1,152 +1,125 @@
-  <!DOCTYPE html>
-  <html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Hobnob Careers</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            background-color: #F6E6CB;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ABC Careers</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: #F6E6CB;
+                font-family: "Roboto", sans-serif;
+            }
 
-        .title>h1 {
-            position: absolute;
-            top: 170px;
-            right: 65px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-style: content: '\ead1';
-            ;
-            font-size: 125px;
-            color: white;
-        }
+            .title {
+                text-align: center;
+                color: white;
+            }
 
-        .title>p {
-            position: absolute;
-            top: 295px;
-            right: 70px;
-            font-family: "Roboto", sans-serif;
-            font-style: italic;
-            font-size: 25px;
-            color: white;
-        }
+            .title h1 {
+                font-size: calc(2.5rem + 2vw);
+                font-weight: 400;
+            }
 
-        .banner {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-        }
+            .title p {
+                font-style: italic;
+                font-size: calc(1rem + 0.5vw);
+            }
 
-        .head {
-            margin: 20px;
-            text-align: center;
-            font-family: "Roboto", sans-serif;
-            font-size: 60px;
-            font-weight: bold;
-        }
+            .banner {
+                width: 100%;
+                height: auto;
+            }
 
-        .about {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 20px;
-            margin: 0px 150px;
+            .about {
+                font-size: 1.2rem;
+                margin: 2rem auto;
+                max-width: 80%;
+            }
 
-        }
+            .jobs {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+                margin: 2rem 0;
+            }
 
-        .jobs {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 32px;
-            justify-content: center;
-            padding: 20px;
-            margin: 0 10vw 0 10vw;
-        }
+            .item {
+                background-color: #BACD92;
+                border-radius: 13px;
+                padding: 13px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
 
-        .item {
-            background-color: #BACD92;
-            border-radius: 13px;
-            padding: 13px;
-            width: 25vw;
-            height: 25vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
+            .item h3 {
+                font-size: 1.5rem;
+            }
 
-        .item>h3 {
-            font-size: 33px;
-            font-family: math;
-        }
+            .location,
+            .salary {
+                font-size: 1rem;
+            }
 
-        .location {
-            font-size: 18px;
-        }
+            .apply {
+                margin-top: 10px;
+            }
 
-        .salary {
-            font-size: 18px;
-        }
+            .contactus {
+                margin: 20px auto;
+                display: block;
+                font-size: 1.5rem;
+            }
+        </style>
+    </head>
 
-        .apply {
-            margin: 10px;
-            height: 37px;
-            width: 220px;
-            text-align: center;
-        }
+  <body>
+    <header class="title bg-primary py-5">
+        <h1>Hobnob Careers</h1>
+        <p>Building Amazing Career Connections and Job Opportunities</p>
+    </header>
 
-        .contactus {
-            margin: 20px;
-            height: 60px;
-            width: 267px;
-            font-size: 30px;
-        }
-    </style>
-</head>
+    <img src="img_job2.jpg" alt="Career Banner" class="banner">
 
-<body>
-  <div class="title">
-    <h1>Hobnob Careers</h1>
-    <p>Building Amazing Career Connections and Job Opportunities </p>
-  </div>
-  <img src="static/img_job2.jpg" alt="" class="banner">
+    <main>
+        <div class="container">
+            <h2 class="head text-center border-bottom border-4 border-primary py-3">About Hobnob Careers</h2>
 
-  <div class="head border-bottom border-4 border-primary">About Hobnob Careers</div>
+            <p class="about">Welcome to Hobnob Careers – your premier destination for career connection and job
+                opportunities. At Hobnob Hub, we understand the importance of building meaningful professional
+                relationships and finding the right job. Our platform is designed to bridge the gap between job seekers
+                and employers, providing a seamless and efficient way to connect, explore job listings, and apply for
+                positions that match your skills and aspirations. Whether you’re a recent graduate embarking on your
+                career journey, a seasoned professional looking for new challenges, or an employer seeking top talent,
+                Hobnob Hub offers the tools and resources you need to succeed. Our user-friendly interface makes it easy
+                to create a profile, network with industry peers, and discover opportunities that align with your career
+                goals. Join Hobnob Hub today and take the first step towards a brighter professional future. Let's
+                connect, grow, and succeed together!</p>
+            <br>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloremque sequi nam iure
+                voluptate minima fuga reiciendis ad, similique hic possimus perspiciatis vero quo cupiditate placeat
+                error ex enim vel porro, illum distinctio? Neque delectus debitis necessitatibus pariatur illo
+                distinctio ducimus. Autem distinctio quae sunt ut, error eos, nulla rem harum omnis aperiam rerum
+                ducimus. Unde sequi molestias beatae, similique molestiae ea praesentium maxime architecto velit natus
+                qui! Amet, numquam veniam. Ullam iste deserunt ea atque voluptates harum, et aliquam nisi itaque mollitia
+                eius corrupti asperiores a sint odio delectus modi voluptas nesciunt sequi, earum debitis ut corporis
+                repellendus culpa!</p>
+            <br>
+            <p class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, quia reprehenderit iure
+                quidem quibusdam eveniet tempora delectus suscipit fuga ratione excepturi dolorum placeat, saepe
+                laboriosam ipsa ducimus qui autem tenetur. Ea dolore ex quisquam dicta a obcaecati cumque iste illo illum?
+                Porro quam impedit quaerat temporibus minima esse similique veniam.</p>
+            <br>
 
-  <p class="about">Welcome to Hobnob Careers – your premier destination for career connection and job opportunities.
-    At Hobnob Hub, we understand the importance of building meaningful professional relationships and finding the
-    right job. Our platform is designed to bridge the gap between job seekers and employers, providing a seamless
-    and efficient way to connect, explore job listings, and apply for positions that match your skills and
-    aspirations.
-    Whether you’re a recent graduate embarking on your career journey, a seasoned professional looking for new
-    challenges, or an employer seeking top talent, Hobnob Hub offers the tools and resources you need to succeed.
-    Our user-friendly interface makes it easy to create a profile, network with industry peers, and discover
-    opportunities that align with your career goals.Join Hobnob Hub today and take the first step towards a brighter
-    professional future. Let's connect, grow, and succeed together!</p>
-  <br>
-  <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloremque sequi nam iure
-    voluptate minima fuga reiciendis ad, similique hic possimus perspiciatis vero quo cupiditate placeat error ex
-    enim vel porro, illum distinctio? Neque delectus debitis necessitatibus pariatur illo distinctio ducimus. Autem
-    distinctio quae sunt ut, error eos, nulla rem harum omnis aperiam rerum ducimus. Unde sequi molestias beatae,
-    similique molestiae ea praesentium maxime architecto velit natus qui! Amet, numquam veniam. Ullam iste deserunt
-    ea atque voluptates harum, et aliquam nisi itaque mollitia eius corrupti asperiores a sint odio delectus modi
-    voluptas nesciunt sequi, earum debitis ut corporis repellendus culpa!</p>
-  <br>
-  <p class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, quia reprehenderit iure quidem
-    quibusdam eveniet tempora delectus suscipit fuga ratione excepturi dolorum placeat, saepe laboriosam ipsa
-    ducimus qui autem tenetur. Ea dolore ex quisquam dicta a obcaecati cumque iste illo illum? Porro quam impedit
-    quaerat temporibus minima esse similique veniam.</p>
-  <br>
-
-  <h2 class="head border-bottom border-4 border-primary">Job Openings</h2>
+            <h2 class="head text-center border-bottom border-4 border-primary py-3">Job Openings</h2>
 
     <div class="jobs">
       {% for job in jobs %}
@@ -154,10 +127,10 @@
       {% endfor %}
     </div>
 
-  <div style="text-align: center;">
-      <button class="contactus btn btn-info">Contact Us</button>
-  </div>
-
-</body>
-
+          <div class="text-center">
+            <button class="contactus btn btn-info">Contact Us</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
